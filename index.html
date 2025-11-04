@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>생신 축하 드려요</title>
+
+  <style>
+    /* 배경 이미지 설정 */
+    body {
+      margin: 0;
+      font-family: "Noto Sans KR", sans-serif;
+      background-color: #3a3c39; /* 어두운 기본 배경 */
+      /* 수정: 로컬 파일을 상대경로로 참조 (index.html과 같은 폴더에 bg_img.gif가 있을 때) */
+      background-image: url("bg_img.gif");
+      background-repeat: repeat; /* 원본처럼 반복 패턴 */
+      background-position: top left;
+      color: #e5e5e5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      color: #ff66a3;
+      font-size: 3rem;
+      margin-bottom: 10px;
+      text-shadow: 0 0 8px #ffb6c1;
+      animation: glow 1.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 8px #ffb6c1; }
+      to { text-shadow: 0 0 24px #ff66a3; }
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    button {
+      background-color: #ff4d88;
+      border: none;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #ff7aa8;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>🎉 인이아빠 생신 축하드려요 🎂</h1>
+  <p>항상 새벽부터 밤늦게까지 고생이 많아요 힘내세요<br>
+  "いつもありがとうございます"</p>
+
+  <!-- 버튼 클릭 시 유튜브 영상으로 이동 -->
+  <button onclick="window.open('https://youtu.be/sHpSjRHI-sQ?si=AiA497aya4e1-XwK', '_blank')">
+    영상 보기
+  </button>
+</body>
+</html>
